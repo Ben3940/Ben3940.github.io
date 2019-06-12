@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" defer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+
+    <!-- popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eb71ca259c.js" defer></script>
+
+    <!-- CKeditor -->
+    <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js" defer></script>
+
+    <!-- CDN link to Vue.js.  NOTE: do not forget to include defer in <script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+
+    <!-- Our JS file where Vue object is defined. NOTE: do not forget to include defer in <script> -->
+    <script src="./main.js" defer></script>
+
+    <!-- personal styling -->
+    <link rel="stylesheet" href="style.css" type="text/css" defer />
+
+</head>
+<body>
+    <div id="app">
+
+        <!-- Nav bar for website -->
+        <nav class="navbar navbar-expand-sm fixed-top line">
+            <div class="container">
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#programming-head-section" class="nav-link">Programming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#web_dev-head-section" class="nav-link">Web Development</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Top of website, home load in section-->
+        <header class="line" id="home-section">
+            <div class="container home-inner pb-5 text-center home-text" id="home">
+                <div class="row">
+                    <div class="col-sm-7 home-description">
+                        <h2>Benjamin  Yanick</h2>
+                        <h5><strong>Email:</strong> byanick@ycp.edu</h5>
+                        <h5><strong>Phone:</strong> (717)434-8840</h5>
+                        <p>
+                            Welcome to my personal website!  My name is Benjamin Yanick and I have a passion for self-learning.
+                            I study topics related to programming, electronics, networking, AI, web development, and 3D modeling.
+                            This website is a showcase of the project I have developed over the years.  The website
+                            is broken down into sections related to the subjects I just mentioned.  You can scroll down or click the
+                            links in the navigation bar above.
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="rounded-circle" src="Img/BenYanick.JPG" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- PROGRAMMING SECTION -->
+        <!-- PROGRAMMING HEADER -->
+        <section class="section-header" id="programming-head-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="p-5">
+                            <h1 class="display-4">Programming</h1>
+                            <p class="lead">
+                                Low-level programming is the focus of my programming interests.
+                                Being able to code programs that work close with the hardware
+                                they run on is rather facinating, thus making C and C++ my prefered
+                                langauges to work with.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAMMING SECTION -->
+        <section class="py-5 line">
+            <div class="container">
+
+                <div class="row line">
+                    <div class="col-sm-6">
+                        <h5>Desktop Calculator App</h5>
+                        <p>
+                            I created a simple clone of the desktop calculator app that you will find
+                            on any computer.  Coded in C++ with the use of the Qt widget toolkit to make
+                            the GUI easier to develop.
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="img/Calculator.JPG" class="img-fluid mb-3" />
+                    </div>
+                </div>
+
+                <!-- pt-5 adds 5px of padding to the top of this row (for better spacing) -->
+                <div class="row pt-5">
+                    <div class="col-sm-6 ">
+                        <h5>Simple Text Editor</h5>
+                        <p>
+                            I created a basic text editor (similar to notepad) that allows you to save and
+                            open text files.  Coded in C++ with the use of the Qt framework to accelerate
+                            development of the GUI.
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="img/TextEditor.JPG" class="img-fluid mb-3" />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- WEB DEVELOPMENT SECTION -->
+        <!-- WEB DEVELOPMENT HEADER -->
+
+        <section class="section-header" id="web_dev-head-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="p-5">
+                            <h1 class="display-4">Web Development</h1>
+                            <p class="lead">
+                                Being able to create my own websites in order to display my accomplishments is
+                                quite facinating.  I really enjoy front-end development and working with
+                                HTML/CSS and JavaScript to create responsive and stylish websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WEB DEVELOPMENT SECTION -->
+        <section class="py-5 line">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h5>This Website</h5>
+                        <p>
+                            This entire website was created from the ground up using HTML/CSS and JavaScript.
+                            I also use Bootstrap 4 (CSS framework) and Vue.js (JavaScript framework) to make
+                            the website more stylized and responsive.  This website is continously expanding as
+                            I set out to learn more and add previous projects to the website.  Therefore, 
+                            more languages, frameworks, and optimizations may be added to the site in the future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+</body>
+</html>
