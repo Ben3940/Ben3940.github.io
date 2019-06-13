@@ -137,7 +137,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" v-html="CPPTextEditor">
-                        
+
                     </div>
 
                 </div>
@@ -189,6 +189,68 @@
 
 
 
+        <!-- AI SECTION -->
+        <!-- AI HEADER -->
+        <section class="section-header" id="ai-head-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="p-5">
+                            <h1 class="display-4">AI</h1>
+                            <p class="lead">
+                                AI is rapidly growing, and continuously opens up many new doors to the scientific community.
+                                I am particulary intested in neural networks and computer vision yet, find myself hoping around
+                                from one AI model to the next.  Python and the various libraries (i.e. Scikit-learn and Keras)
+                                geared towards AI development, make it a blast to program.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI SECTION -->
+        <section class="py-5 line">
+            <div class="container">
+
+                <div class="row line">
+                    <div class="col-sm-6">
+                        <h5>Sentiment analysis AI</h5>
+                        <p>
+                            This AI is given a review of a park and predicts if the review was positive or negative,
+                            given the words used in the sentence.  This AI uses naive Bayes' theorem as its model.  To train
+                            the model, it was given 2000 positive review and 2000 negative reviews.  It the tokenized each word
+                            from every positive sentence and determined the probability of a word being associated with possitive. 
+                            For example, if the word "good" appeared more often than "ok" in the positive reivews, then "good" will
+                            lead to a higher probability of a sentence being positive, given that the word "good" is in it.  The AI
+                            will tokenize the negative reviews the same way.  At the end, the AI will ask if its prediction was correct,
+                            giving you the chance to teach it and help it improve its model.
+                        </p>
+                    </div>
+                    <div class="col-sm-6" v-html="sentimentAI">
+
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-sm-6">
+                        <h5>Tic Tac Toe AI</h5>
+                        <p>
+                            This AI will play tic tac toe with you and will always tie or beat you, it can never lose.  It uses
+                            a Minimax algroithm to predict every move that can be made.  By doing so, the AI can evaluate which 
+                            set of moves will direct it towards the optimal outcome.  For tic tac toe, there are not that many moves
+                            to consider, however, the AI takes much longer to make its first move than it does it second to last, because
+                            there are less moves it has to consider.
+                        </p>
+                    </div>
+                    <div class="col-sm-6" v-html="ticTacToeAI">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <!-- ELECTRONICS SECTION -->
         <!-- ELECTRONICS HEADER -->
         <section class="section-header" id="electronics-head-section">
@@ -198,9 +260,9 @@
                         <div class="p-5">
                             <h1 class="display-4">Electronics</h1>
                             <p class="lead">
-                                Though anyone can program without worrying about what is going on inside their computer, 
-                                it is still quite benefical to understand electronics to some extent.  Arduino and 
-                                Raspberry Pi make working with electronics user-friendly and greatly accelerate the 
+                                Though anyone can program without worrying about what is going on inside their computer,
+                                it is still quite benefical to understand electronics to some extent.  Arduino and
+                                Raspberry Pi make working with electronics user-friendly and greatly accelerate the
                                 development process.
                             </p>
                         </div>
@@ -219,14 +281,14 @@
                         <p>
                             This basic calculator can add, subtract, divide, and multiply numbers.  It uses a
                             ATmega2560 Arduino board with a LCD to show input/output to/from the microcontroller.
-                             The A, B, C, and D, keys on the keypad were programmed as the add, subtract, multiply, and
+                            The A, B, C, and D, keys on the keypad were programmed as the add, subtract, multiply, and
                             divide buttons, respectivly.  The pound key does nothing and the asterisk button replicates
-                            the multiply button's functionality (this is the default behavior of the asterisk key).  
+                            the multiply button's functionality (this is the default behavior of the asterisk key).
                             There is even a potentiometer to adjust the brightness of the LCD.
                         </p>
                     </div>
                     <div class="col-sm-6" v-html="electronicsCalculator">
-                        
+
                     </div>
                 </div>
             </div>
@@ -269,7 +331,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" v-html="rings">
-                        
+
                     </div>
                 </div>
 
@@ -284,7 +346,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" v-html="train">
-                        
+
                     </div>
                 </div>
 
@@ -300,7 +362,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6" v-html="boat">
-                        
+
                     </div>
                 </div>
 
