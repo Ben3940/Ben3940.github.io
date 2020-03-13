@@ -1,0 +1,14 @@
+﻿body {
+    background: #2e4356;
+    color: #ffcb9a;
+}
+
+p{
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
