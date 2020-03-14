@@ -1,14 +1,29 @@
 ﻿body {
     background: #2e4356;
     color: #ffcb9a;
+    font-size: 1.4rem;
+    margin: 0;
+}
+h1 {
+    font-size: 3.5rem;
 }
 
-p{
-    font-size: 18px;
-}
 
 .container{
     display: flex;
     flex-direction: row;
+}
+
+/* Used to insert peach-gold line underneath some sections of the web page */
+.line {
+    border-bottom: #ffcb9a 3px solid;
+}
+
+.section-header{
+    background: #d1e8e2;
+    color: #2c3531;
+    text-align: center;
+    padding: 2rem 20rem 2rem 20rem;
+    border: #778899 7px solid;
 }
 
