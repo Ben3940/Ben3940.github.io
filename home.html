@@ -11,12 +11,12 @@
     
     <div id="app">
 
-    <header>
-        <div class="container" id="header">
+    <header class="container head" id="header">
+        <div>
                 <div class="">
                     <h2>Benjamin  Yanick</h2>
-                    <h5><strong>Email:</strong> byanick@ycp.edu</h5>
-                    <h5><strong>Phone:</strong> (717)434-8840</h5>
+                    <h3><strong>Email:</strong> byanick@ycp.edu</h3>
+                    <h3><strong>Phone:</strong> (717)434-8840</h3>
                     <p>
                         Welcome to my personal website!  My name is Benjamin Yanick and I have a passion for self-learning.
                         This website is a showcase of the projects I have developed over the years.  The website
@@ -25,61 +25,77 @@
                     </p>
                 </div>
         </div>
+        <div v-html="selfImage">
+
+        </div>
     </header>
 
 
 
-    <!-- WEB DEVELOPMENT SECTION -->
-    <!-- WEB DEVELOPMENT HEADER -->
+    <!-- BLENDER SECTION -->
+    <!-- BLENDER HEADER -->
 
-    <section class="section-header" id="web_dev-head-section">
+    <section class="section-header" id="Blender-head-section">
         <div>
             <div>
-                <h1>Web Development</h1>
+                <h1>Blender</h1>
                 <p>
-                    Being able to create websites in order to display data (i.e. products, accomplishments,
-                    information, etc.) is essential in modern society.  I really enjoy front-end development
-                    and working with HTML/CSS and JavaScript to create responsive and stylish websites for the
-                    various forms of data to be displayed on the internet.
+                    One of the more non-scientific topics of my self-learning adventure, 3D modeling
+                    is more for relaxing than anything else.  Blender is a powerful open-source 3D
+                    modeling software that is a lot more forgiving than painting/drawing similar models.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- WEB DEVELOPMENT SECTION -->
-    <section class="line">
+    <!-- BLENDER SECTION -->
+    <section class="section-content line">
         
-
-        <div class="row">
-            <div class="line">
-                <h5>This Website</h5>
+        <div class="img-layout line">
+            <div>
+                <h3>Rings</h3>
                 <p>
-                    This entire website was created from the ground up using HTML/CSS and JavaScript.
-                    I also use Bootstrap 4 (CSS framework) and Vue.js (JavaScript framework) to make
-                    the website more stylized and responsive.  This website is continously expanding as
-                    I set out to learn more and add previous projects to the website.  Therefore,
-                    more languages, frameworks, and optimizations may be added to the site in the future.
+                    A scene I made towards the beginning of my time with Blender.  I duplicated a ring multiple
+                    times, changing its size and orientation each time. I have the rings wrap around the core and,
+                    a singe light shining down on them.
                 </p>
             </div>
-        </div>
-        <div class="row pt-5">
-            <div class="col-sm-6">
-                <h5>Landing Page</h5>
-                <p>
-                    This is a clone of the chrome extension called Momentum.  This web page will set the time (while continuously updating
-                    it) with respect to the user's system time.  It will also store in local storage the user's name and their focus
-                    for that day, displaying the information provided back even if the browser is refreshed.  Despite the small use of Bootstrap
-                    to make positioning of the text on mobile devices more appealing, vanilla HTML/CSS and JavaScript are the only things used 
-                    in this chrome extension.  
-                    <br />
-                    <br />
-                    You can click on the image to see the extension in action.
-                </p>
-            </div>
-            <div class="col-sm-6" v-html="LandingPage">
+            <div v-html="rings">
 
             </div>
         </div>
+
+        <div class="img-layout line">
+            <div v-html="train">
+                
+            </div>
+            <div>
+                <h3>Train</h3>
+                <p>
+                    This train was modeled after a image of a train I saw on google, while practicing with shape
+                    manipulation in Blender.  All of the pieces to this train are made with primitive objects, meaning
+                    that no sculpting or object editing was performed.  This is a crude way to model but suffices as a
+                    starting point into modeling.
+                </p>
+            </div>
+        </div>
+
+        <div class="img-layout">
+            <div>
+                <h3>Boat Under the Moonlight</h3>
+                <p>
+                    This scene does not set out to be over complicated or involve too much.  I
+                    created a simple, low-poly model of a boat and, placed it out on a plane with a reflective
+                    dark-blue material.  The white spheres in the sky emit their own light, which is how they
+                    create reflections on the water.  This image was rendered with Blender's Cycles rendering
+                    engine.
+                </p>
+            </div>
+            <div v-html="boat">
+
+            </div>
+        </div>
+
         
     </section>
 

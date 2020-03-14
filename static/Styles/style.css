@@ -19,11 +19,42 @@ h1 {
     border-bottom: #ffcb9a 3px solid;
 }
 
+.head{
+    height: 100vh;
+}
+.head img{
+    width: 100vh;
+    height: 100vh;
+}
+
 .section-header{
     background: #d1e8e2;
     color: #2c3531;
     text-align: center;
-    padding: 2rem 20rem 2rem 20rem;
+    padding: 2rem 30rem 2rem 30rem;
     border: #778899 7px solid;
 }
 
+.section-content{
+    padding: 0rem 25rem 2rem 25rem;
+}
+
+
+
+/* Styling for positioning images across the site properly for each section */
+.img-layout{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.img-layout div{
+    flex-basis: 50%;
+}
+
+.img-layout img{
+    padding: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

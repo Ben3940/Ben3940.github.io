@@ -2,6 +2,10 @@
     el: "#app",
 
     data: {
+
+        //Picture of Myslef
+        selfImage: "<img src='static/Img/Index_Img/BenYanick.JPG' />",
+
         //C++ claculator desktop app image
         CPPCalculator: "<img src='static/Img/Index_Img/Calculator.JPG' class='img-fluid mb-3' / >",
 
