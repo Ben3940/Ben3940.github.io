@@ -1,8 +1,13 @@
-﻿body {
+﻿html{
+    scroll-behavior: smooth;
+}
+
+body {
     background: #2e4356;
     color: #ffcb9a;
     font-size: 1.4rem;
     margin: 0;
+
 }
 h1 {
     font-size: 3.5rem;
@@ -26,6 +31,12 @@ h1 {
     width: 100vh;
     height: 100vh;
 }
+.head-text{
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
 
 .section-header{
     background: #d1e8e2;
@@ -39,6 +50,36 @@ h1 {
     padding: 0rem 25rem 2rem 25rem;
 }
 
+
+.navbar{
+    border-bottom: #778899 2px solid;
+    background: #d1e8e2;
+    color: #2c3531;
+    padding: .5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-item{
+    border-right: #ffcb9a 3px solid;
+    padding: .5rem;
+    text-decoration: none;
+    color: #2c3531;
+}
+
+#navbar{
+    overflow: hidden;
+}
+
+.sticky{
+    
+    
+}
+
+.content{
+    padding-top: 1.5rem;
+}
 
 
 /* Styling for positioning images across the site properly for each section */

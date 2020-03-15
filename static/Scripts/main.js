@@ -1,4 +1,17 @@
-﻿new Vue({
+﻿let navbar = document.getElementById("navbar");
+let sticky = navbar.offsetTop;
+
+window.onscroll = function() {
+    console.log(navbar.classList);
+    if (window.pageYOffset >= sticky){
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+};
+
+
+new Vue({
     el: "#app",
 
     data: {
