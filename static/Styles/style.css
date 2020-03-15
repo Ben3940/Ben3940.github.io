@@ -52,20 +52,30 @@ h1 {
 
 
 .navbar{
-    border-bottom: #778899 2px solid;
-    background: #d1e8e2;
-    color: #2c3531;
+    border-bottom: #ffcb9a 3px solid;
+    background: #2e4356;
     padding: .5rem;
     position: fixed;
     top: 0;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .navbar-item{
-    border-right: #ffcb9a 3px solid;
-    padding: .5rem;
+    /*border-right: #ffcb9a 3px solid;*/
+    padding: 0.5rem 2rem 0.5rem 2rem;
+
     text-decoration: none;
+    color: #ffcb9a;
+    transition: 0.75s;
+}
+
+.navbar-item:hover{
+    background: #778899;
     color: #2c3531;
+    
 }
 
 #navbar{
@@ -78,7 +88,7 @@ h1 {
 }
 
 .content{
-    padding-top: 1.5rem;
+    padding-top: 3rem;
 }
 
 
