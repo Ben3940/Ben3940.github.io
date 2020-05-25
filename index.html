@@ -1,402 +1,164 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Yanick</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" defer>
+    <!-- Font Awesome Icons included -->
+    <script src="https://kit.fontawesome.com/eb71ca259c.js" crossorigin="anonymous"></script>
 
-
-    <!-- personal styling -->
-    <link rel="stylesheet" href="Styles/style.css" type="text/css" defer />
-
+    <link type="text/css" rel="stylesheet" href="static/Styles/style.css" defer/>
 </head>
 <body>
+    
     <div id="app">
+    
+    <nav class="navbar" id="navbar">
+        <a class="navbar-item" href="#home-section">Home</a>
+        <a class="navbar-item" href="#Blender-head-section">Blender</a>
+    </nav>
 
-        <!-- Nav bar for website -->
-        <nav class="navbar navbar-expand-sm fixed-top line">
-            <div class="container">
-
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#programming-head-section" class="nav-link">Programming</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#web_dev-head-section" class="nav-link">Web Development</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#ai-head-section" class="nav-link">AI</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#electronics-head-section" class="nav-link">Electronics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#blender-head-section" class="nav-link">Blender</a>
-                        </li>
-                    </ul>
+    <div class="content" id="home-section">
+    <header class="container" id="header">
+        <div class="head-text">
+                <div id="head-text-container">
+                    <h2>Benjamin  Yanick</h2>
+                    <div id="underline"></div>
+                    <p>
+                        Welcome to my personal website!  My name is Benjamin Yanick and I have a passion for self-learning.
+                        This website is a showcase of the projects I have developed over the years.  The website currently presents 3D art work I've made with Blender.  Eventually, projects related to web development, AI, and electronics will be included.
+                    </p>
                 </div>
+        </div>
+        <a id="header-scroll-button" href="#Blender-head-section"><i class="fas fa-arrow-circle-down"></i></a>
+        
+    </header>
+
+
+
+
+
+
+    <!-- BLENDER SECTION -->
+    <!-- BLENDER HEADER -->
+
+    <section class="section-header" id="Blender-head-section">
+        <div>
+            <div>
+                <h1>Blender</h1>
+                <p>
+                    One of the more non-scientific topics of my self-learning adventure, 3D modeling
+                    is more for relaxing than anything else.  Blender is a powerful open-source 3D
+                    modeling software that is a lot more forgiving than painting/drawing similar models.
+                </p>
             </div>
-        </nav>
+        </div>
+    </section>
 
-        <!-- Top of website, home load in section-->
-        <header class="line" id="home-section">
-            <div class="container home-inner pb-5 text-center home-text" id="home">
-                <div class="row">
-                    <div class="col-sm-12 home-description">
-                        <h2>Benjamin  Yanick</h2>
-                        <h5><strong>Email:</strong> byanick@ycp.edu</h5>
-                        <p>
-                            Welcome to my personal website!  My name is Benjamin Yanick and I have a passion for self-learning.
-                            This website is a showcase of the projects I have developed over the years.  The website
-                            is broken down into sections related to programming, web development, AI, electronics,
-                            and 3D modeling.  You can scroll down or click the links in the navigation bar above.
-                        </p>
-                    </div>
-
-                </div>
+    <!-- BLENDER SECTION -->
+    <section class="section-content line">
+        
+        <div class="img-layout line">
+            <div>
+                <h3>Rings</h3>
+                <p>
+                    A scene I made towards the beginning of my time with Blender.  I duplicated a ring multiple
+                    times, changing its size and orientation each time. I have the rings wrap around the core and,
+                    a single light shining down on them.
+                </p>
             </div>
-        </header>
+            <div v-html="rings"></div>
+        </div>
 
-
-        <!-- PROGRAMMING SECTION -->
-        <!-- PROGRAMMING HEADER -->
-        <section class="section-header" id="programming-head-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="p-5">
-                            <h1 class="display-4">Programming</h1>
-                            <p class="lead">
-                                Low-level programming is the focus of my programming interests.
-                                Being able to code programs that work close with the hardware
-                                they run on can make them more efficent.  C and C++ are my prefered
-                                langauges to work with when it comes to low-level programming.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="img-layout line">
+            <div>
+                <h3>Train</h3>
+                <p>
+                    This train was modeled after a image of a train I saw on google, while practicing with shape
+                    manipulation in Blender.  All of the pieces to this train are made with primitive objects, meaning
+                    that no sculpting or object editing was performed.  This is a crude way to model but suffices as a
+                    starting point into modeling.
+                </p>
             </div>
-        </section>
+            <div v-html="train"></div>
+        </div>
 
-        <!-- PROGRAMMING SECTION -->
-        <section class="py-5 line">
-            <div class="container">
-
-                <div class="row line">
-                    <div class="col-sm-6">
-                        <h5>Desktop Calculator App</h5>
-                        <p>
-                            I created a simple clone of the desktop calculator app that you will find
-                            on any computer.  You can do basic arithmetic operations (i.e. add,
-                            subtract, multiply, and divide), factorial, exponential, and store numbers in
-                            temporary memory by using the M keys to the far right.  Coded in C++ with the
-                            use of the Qt widget toolkit to make the GUI easier to develop.
-                        </p>
-                    </div>
-                    <!-- Using Vue.js to insert <img> in web page -->
-                    <div class="col-sm-6" v-html="CPPCalculator">
-                    </div>
-                </div>
-
-                <!-- pt-5 adds 5px of padding to the top of this row (for better spacing) -->
-                <div class="row pt-5">
-                    <div class="col-sm-6 ">
-                        <h5>Simple Text Editor</h5>
-                        <p>
-                            I created a basic text editor (similar to notepad) that allows you to save and
-                            open text files.  You can also connect to a printer and create a physical copy of
-                            the file content.  Coded in C++ with the use of the Qt framework to accelerate
-                            development of the GUI.
-                        </p>
-                    </div>
-                    <div class="col-sm-6" v-html="CPPTextEditor">
-
-                    </div>
-
-                </div>
+        <div class="img-layout line">
+            <div>
+                <h3>Boat Under the Moonlight</h3>
+                <p>
+                    This scene does not set out to be over complicated or involve too much.  I
+                    created a simple, low-poly model of a boat and, placed it out on a plane with a reflective
+                    dark-blue material.  The white spheres in the sky emit their own light, which is how they
+                    create reflections on the water.  This image was rendered with Blender's Cycles rendering
+                    engine.
+                </p>
             </div>
-        </section>
+            <div v-html="boat"></div>
+        </div>
 
-
-
-
-        <!-- WEB DEVELOPMENT SECTION -->
-        <!-- WEB DEVELOPMENT HEADER -->
-
-        <section class="section-header" id="web_dev-head-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="p-5">
-                            <h1 class="display-4">Web Development</h1>
-                            <p class="lead">
-                                Being able to create websites in order to display data (i.e. products, accomplishments,
-                                information, etc.) is essential in modern society.  I really enjoy front-end development
-                                and working with HTML/CSS and JavaScript to create responsive and stylish websites for the
-                                various forms of data to be displayed on the internet.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="img-layout line">
+            
+            <div>
+                <h3>The Docks</h3>
+                <p>
+                    A low-poly docks where the wooden planks have cuts and distortions to their shape slightly to give a more "realistic" look, since very uniformed planks would look off.
+                    This was rendered using the Eevee engine, which is Blender's real time rendering engine.  This means that the image is created in a few seconds because the engine makes a few
+                    "shortcuts" when it comes to rendering reflections, light bounces, etc. .
+                </p>
             </div>
-        </section>
+            <div v-html="docks"></div>
+        </div>
 
-        <!-- WEB DEVELOPMENT SECTION -->
-        <section class="py-5 line">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-sm-12 line">
-                        <h5>This Website</h5>
-                        <p>
-                            This entire website was created from the ground up using HTML/CSS and JavaScript.
-                            I also use Bootstrap 4 (CSS framework) and Vue.js (JavaScript framework) to make
-                            the website more stylized and responsive.  This website is continously expanding as
-                            I set out to learn more and add previous projects to the website.  Therefore,
-                            more languages, frameworks, and optimizations may be added to the site in the future.
-                        </p>
-                    </div>
-                </div>
-                <div class="row pt-5">
-                    <div class="col-sm-6">
-                        <h5>Landing Page</h5>
-                        <p>
-                            This is a clone of the chrome extension called Momentum.  This web page will set the time (while continuously updating
-                            it) with respect to the user's system time.  It will also store in local storage the user's name and their focus
-                            for that day, displaying the information provided back even if the browser is refreshed.  Despite the small use of Bootstrap
-                            to make positioning of the text on mobile devices more appealing, vanilla HTML/CSS and JavaScript are the only things used 
-                            in this chrome extension.  
-                            <br />
-                            <br />
-                            You can click on the image to see the extension in action.
-                        </p>
-                    </div>
-                    <div class="col-sm-6" v-html="LandingPage">
-
-                    </div>
-                </div>
+        <div class="img-layout line">
+            <div>
+                <h3>The Vally</h3>
+                <p>
+                    The start to a future series of low-poly landscapes that I want to create.  These scenes will use rough sculpting of primitive objects to create the land features (i.e. rives, mountains, etc.).
+                    The Eevee rendering engine will be used to help enhance the cartoon-ish look of these landscapes, which is a key part to their character.
+                </p>
             </div>
-        </section>
+            <div v-html="vally"></div>
+        </div>
 
-
-
-
-        <!-- AI SECTION -->
-        <!-- AI HEADER -->
-        <section class="section-header" id="ai-head-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="p-5">
-                            <h1 class="display-4">AI</h1>
-                            <p class="lead">
-                                AI is rapidly growing and continuously opens up many new doors to the scientific community.
-                                I am particulary intested in neural networks and computer vision, however, I find myself hoping around
-                                from one AI model to the next.  Python and the various libraries (i.e. Scikit-learn and Keras)
-                                geared towards AI development make it a blast to program AI.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="img-layout line">
+            
+            <div>
+                <h3>Legos</h3>
+                <p>
+                    A recreation of the iconic childhood toys, Legos.  The main focus is on realism with the lighting and texturing of the scene.  This project uses the Cycles rendering engine to
+                    achieve the most realistic lighting options.  I have some future ideas of creating buildings and other sturctures with the basic Lego building blocks seen here.
+                </p>
             </div>
-        </section>
+            <div v-html="lego"></div>
+        </div>
 
-        <!-- AI SECTION -->
-        <section class="py-5 line">
-            <div class="container">
+        
 
-                <div class="row line">
-                    <div class="col-sm-6">
-                        <h5>Sentiment Analysis AI</h5>
-                        <p>
-                            This AI is given a review of a park and predicts if the review is positive or negative,
-                            given the words used in the sentence.  This AI uses naive Bayes' theorem as its model.  To train
-                            the model, it was given 2000 positive review and 2000 negative reviews.  It then tokenized each word
-                            from every positive sentence and determined the probability of a word being associated with positivity.
-                            For example, if the word "good" appeared more often than "ok" in the positive reivews, then "good" will
-                            lead to a higher probability of a sentence being positive, given that the word "good" is in it.  The AI
-                            will tokenize the negative reviews the same way.  At the end, the AI will ask if its prediction was correct,
-                            giving you the chance to teach it and help it improve its model.
-                        </p>
-                    </div>
-                    <div class="col-sm-6" v-html="sentimentAI">
-
-                    </div>
-                </div>
-                <div class="row pt-5">
-                    <div class="col-sm-6">
-                        <h5>Tic Tac Toe AI</h5>
-                        <p>
-                            This AI will play tic tac toe with you.  It will always tie or beat you in every game, it can never lose.  It uses
-                            a Minimax algroithm to predict every move that can be made.  By doing so, the AI can evaluate which
-                            set of moves will direct it towards the optimal outcome.  For tic tac toe, there are not that many moves
-                            to consider, however, the AI takes much longer to make its first move than it does it second to last, because
-                            there are less moves it has to consider.
-                        </p>
-                    </div>
-                    <div class="col-sm-6" v-html="ticTacToeAI">
-
-                    </div>
-                </div>
+        <div class="img-layout">
+            <div>
+                <h3>Hammer</h3>
+                <p>
+                    The closest I have gotten, so far, to photorealism within Blender.  Ironically, this image was captured using the Eevee engine.  The repeating ring pattern down the texture of the wooden handle
+                    slightly suppresses the realism of the image, I think, since this is too uniform for the real world.  Changing the ring pattern would require dealing with UV unwrapping of the image texture, which
+                    is above my level of experience with Blender at the time of rendering the image.
+                </p>
             </div>
-        </section>
+            <div v-html="hammer"></div>
+        </div>
 
-
-
-        <!-- ELECTRONICS SECTION -->
-        <!-- ELECTRONICS HEADER -->
-        <section class="section-header" id="electronics-head-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="p-5">
-                            <h1 class="display-4">Electronics</h1>
-                            <p class="lead">
-                                Though anyone can program without worrying about what is going on inside their computer,
-                                it is still quite benefical to understand electronics to some extent.  Arduino and
-                                Raspberry Pi make working with electronics user-friendly and greatly accelerate the
-                                development process.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ELECTRONICS SECTION -->
-        <section class="py-5 line">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h5>Simple Calculator</h5>
-                        <p>
-                            This basic calculator can add, subtract, divide, and multiply numbers.  It uses a
-                            ATmega2560 Arduino board with a LCD to show input/output to/from the microcontroller.
-                            The A, B, C, and D, keys on the keypad were programmed as the add, subtract, multiply, and
-                            divide buttons, respectivly.  The pound key does nothing and the asterisk button replicates
-                            the multiply button's functionality (this is the default behavior of the asterisk key).
-                            There is even a potentiometer to adjust the brightness of the LCD.
-                        </p>
-                    </div>
-                    <div class="col-sm-6" v-html="electronicsCalculator">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <!-- BLENDER SECTION -->
-        <!-- BLENDER HEADER -->
-
-        <section class="section-header" id="blender-head-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="p-5">
-                            <h1 class="display-4">Blender</h1>
-                            <p class="lead">
-                                One of the more non-scientific topics of my self-learning adventure, 3D modeling
-                                is more for relaxing than anything else.  Blender is a powerful open-source 3D
-                                modeling software that is a lot more forgiving than painting/drawing similar models.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- BLENDER SECTION -->
-        <section class="py-5 line">
-            <div class="container">
-
-                <div class="row line">
-                    <div class="col-sm-6">
-                        <h5>Rings</h5>
-                        <p>
-                            A scene I made towards the beginning of my time with Blender.  I duplicated a ring multiple
-                            times, changing its size and orientation each time. I have the rings wrap around the core and,
-                            a singe light shining down on them.
-                        </p>
-                    </div>
-                    <div class="col-sm-6" v-html="rings">
-
-                    </div>
-                </div>
-
-                <div class="row line pt-5">
-                    <div class="col-sm-6">
-                        <h5>Train</h5>
-                        <p>
-                            This train was modeled after a image of a train I saw on google, while practicing with shape
-                            manipulation in Blender.  All of the pieces to this train are made with primitive objects, meaning
-                            that no sculpting or object editing was performed.  This is a crude way to model but suffices as a
-                            starting point into modeling.
-                        </p>
-                    </div>
-                    <div class="col-sm-6" v-html="train">
-
-                    </div>
-                </div>
-
-                <div class="row pt-5">
-                    <div class="col-sm-6">
-                        <h5>Boat Under the Moonlight</h5>
-                        <p>
-                            This scene does not set out to be over complicated or involve too much.  I
-                            created a simple, low-poly model of a boat and, placed it out on a plane with a reflective
-                            dark-blue material.  The white spheres in the sky emit their own light, which is how they
-                            create reflections on the water.  This image was rendered with Blender's Cycles rendering
-                            engine.
-                        </p>
-                    </div>
-                    <div class="col-sm-6" v-html="boat">
-
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-
-
+        
+    </section>
+    </div>
     </div>
 
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
-
-    <!-- popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
-
-    <!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/eb71ca259c.js" defer></script>
-
-    <!-- CKeditor -->
-    <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js" defer></script>
 
     <!-- CDN link to Vue.js.  NOTE: do not forget to include defer in <script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
 
     <!-- Our JS file where Vue object is defined. NOTE: do not forget to include defer in <script> -->
-    <script src="Scripts/main.js" defer></script>
+    <script src="./static/Scripts/main.js" defer></script>
+
 </body>
 </html>
