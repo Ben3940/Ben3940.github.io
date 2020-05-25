@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Yanick</title>
 
+    <!-- Font Awesome Icons included -->
+    <script src="https://kit.fontawesome.com/eb71ca259c.js" crossorigin="anonymous"></script>
+
     <link type="text/css" rel="stylesheet" href="static/Styles/style.css" defer/>
 </head>
 <body>
@@ -17,24 +20,23 @@
     </nav>
 
     <div class="content" id="home-section">
-    <header class="container head" id="header">
+    <header class="container" id="header">
         <div class="head-text">
-                <div>
+                <div id="head-text-container">
                     <h2>Benjamin  Yanick</h2>
-                    <h3><strong>Email:</strong> byanick@ycp.edu</h3>
-
+                    <div id="underline"></div>
                     <p>
                         Welcome to my personal website!  My name is Benjamin Yanick and I have a passion for self-learning.
-                        This website is a showcase of the projects I have developed over the years.  The website
-                        is broken down into sections related to programming, web development, AI, electronics,
-                        and 3D modeling.  You can scroll down or click the links in the navigation bar above.
+                        This website is a showcase of the projects I have developed over the years.  The website currently presents 3D art work I've made with Blender.  Eventually, projects related to web development, AI, and electronics will be included.
                     </p>
                 </div>
         </div>
-        <div v-html="selfImage">
-
-        </div>
+        <a id="header-scroll-button" href="#Blender-head-section"><i class="fas fa-arrow-circle-down"></i></a>
+        
     </header>
+
+
+
 
 
 
@@ -66,15 +68,10 @@
                     a single light shining down on them.
                 </p>
             </div>
-            <div v-html="rings">
-
-            </div>
+            <div v-html="rings"></div>
         </div>
 
         <div class="img-layout line">
-            <div v-html="train">
-                
-            </div>
             <div>
                 <h3>Train</h3>
                 <p>
@@ -84,6 +81,7 @@
                     starting point into modeling.
                 </p>
             </div>
+            <div v-html="train"></div>
         </div>
 
         <div class="img-layout line">
@@ -97,14 +95,11 @@
                     engine.
                 </p>
             </div>
-            <div v-html="boat">
-
-            </div>
+            <div v-html="boat"></div>
         </div>
 
         <div class="img-layout line">
-            <div v-html="docks">
-            </div>
+            
             <div>
                 <h3>The Docks</h3>
                 <p>
@@ -113,10 +108,10 @@
                     "shortcuts" when it comes to rendering reflections, light bounces, etc. .
                 </p>
             </div>
+            <div v-html="docks"></div>
         </div>
 
         <div class="img-layout line">
-            
             <div>
                 <h3>The Vally</h3>
                 <p>
@@ -128,7 +123,7 @@
         </div>
 
         <div class="img-layout line">
-            <div v-html="lego"></div>
+            
             <div>
                 <h3>Legos</h3>
                 <p>
@@ -136,7 +131,7 @@
                     achieve the most realistic lighting options.  I have some future ideas of creating buildings and other sturctures with the basic Lego building blocks seen here.
                 </p>
             </div>
-            
+            <div v-html="lego"></div>
         </div>
 
         

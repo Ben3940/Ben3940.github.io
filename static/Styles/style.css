@@ -1,4 +1,5 @@
-﻿html{
+﻿/* Gives the smooth scrolling behavior when we click links in our nav-bar*/
+html{
     scroll-behavior: smooth;
 }
 
@@ -9,11 +10,17 @@ body {
     margin: 0;
 
 }
+
 h1 {
     font-size: 3.5rem;
 }
 
 
+
+
+
+
+/* This is only assigned to the header of the website currently, just some basic layout */
 .container{
     display: flex;
     flex-direction: row;
@@ -24,19 +31,100 @@ h1 {
     border-bottom: #ffcb9a 3px solid;
 }
 
-.head{
+
+
+
+/* The entire header will span the full length of the screen when the user enters the website */
+#header{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.head img{
-    width: 100vh;
-    height: 100vh;
-}
+
 .head-text{
-    padding: 2rem;
+    padding: 0 25rem;
     justify-content: center;
     text-align: center;
     margin: auto;
 }
+
+/* Styling for scroll button at bottom of header (font-awesome icon arrow)*/
+#header-scroll-button{
+    /* Changes size of icon*/
+    font-size: 2rem;
+
+    /* Sets top margin to 0, left and right to auto (centers icon to middle) and bottom to 5 rem so that icon is pushed up to view on page load */
+    margin: 0 auto 5rem auto;
+    
+    /* Removes unwanted blue outline when icon is clicked.*/
+    outline: none;
+
+    /* Since icon is wrapped by <a> we want to change from the default blue/purple to a while color*/
+    color: #fff;
+
+    /* This with the hover state below will give icon the highlighting effect*/
+    opacity: 0.2;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Gives highlighting effect*/
+#header-scroll-button:hover{
+    opacity: 1;
+}
+
+/* Adds a small margin to make <h2> text appear to float up from underline*/
+#head-text-container > h2{
+    margin-bottom: 0.1rem;
+    animation: 1.5s ease-in 0s 1 textFloatUp forwards;
+ }
+ 
+ /* Adds animation to make text fade in */
+ #head-text-container > p{
+    animation: 1.7s ease-in 0s 1 textAppears forwards;
+ }
+ 
+ /* Adds the border and animation to give spanning border effect*/
+ #underline{
+     border-bottom: solid 3px #ffcb9a;
+
+
+     margin: 0 auto;
+     animation: 1.2s ease-in-out 0s 1 underlineSlideIn forwards;
+ }
+ 
+ /* Keyframe for spanning underline for landing portion of webpage */
+ @keyframes underlineSlideIn{
+     0%{
+         width: 0%;
+     }
+     100%{
+         width: 60%;
+     }
+ }
+ 
+ /* Keyframe for Name floating up for landing portion of webpage */
+ @keyframes textFloatUp{
+     0%{
+         opacity: 0;
+         transform: translateY(10px);
+     }
+     100%{
+         opacity: 100%;
+         transform: translateY(-10px); 
+     }
+ }
+ 
+ /* Keyframe for appearing text below underline of landing portion of webpage */
+ @keyframes textAppears{
+     0%{
+         opacity: 0;
+     }
+     100%{
+         opacity: 100%; 
+     }
+ }
+
+
 
 .section-header{
     background: #d1e8e2;
@@ -51,6 +139,10 @@ h1 {
 }
 
 
+
+
+
+/* General styling for the navbar as a whole */
 .navbar{
     border-bottom: #ffcb9a 3px solid;
     background: #2e4356;
@@ -61,10 +153,27 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    /* This ensures that the navbar will always be on top.  There was a bug with font-awesome icon that allowed icons to sit on top of the navbar.*/
+    z-index: 100;
+    
+    /* Changing the animation length or the translateY() value will modify the length of the animation */
+    animation: 0.9s ease-in 0s 1 navbarSlideDown forwards;
 }
 
+/* Gives animation of navbar dropping down from top.
+NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I still get the results I want with the animation.  At this point, the animation works and thats good enough for me*/
+@keyframes navbarSlideDown{
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        
+    }
+}
+
+/* Styling for the individual links within the navbar */
 .navbar-item{
-    /*border-right: #ffcb9a 3px solid;*/
     padding: 0.5rem 2rem 0.5rem 2rem;
 
     text-decoration: none;
@@ -72,6 +181,7 @@ h1 {
     transition: 0.75s;
 }
 
+/* This styling and the transition property in .navbar-item give the highlighting animation when hovering over items within the navbar */
 .navbar-item:hover{
     background: #778899;
     color: #2c3531;
@@ -87,6 +197,8 @@ h1 {
     
 }
 
+/* Padding to off set the content of the webpage so the navbar doesn't overlap the image of myself at the top.  I'm sure there's a better way to do this
+but for now this will do */
 .content{
     padding-top: 3rem;
 }
@@ -99,6 +211,7 @@ h1 {
 
 }
 
+/* Each block of text and each image for a project will take up 50% of the project space on site*/
 .img-layout div{
     flex-basis: 50%;
 }
@@ -108,4 +221,65 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+/* Various media queries to fix padding issues for smaller screens, thus resulting in site text to be akwardly spanning down page */
+@media(max-width: 1800px) {
+    .head-text{
+        padding: 0 10rem;
+    }
+    
+    .section-header{
+        padding: 5rem;
+    }
+
+    .section-content{
+        padding: 5rem;
+    }
+   
+}
+
+@media(max-width: 1200px) {
+    .head-text{
+        padding: 0 5rem;
+    }
+
+    .section-header{
+        padding: 1rem;
+    }
+
+    .section-content{
+        padding: 1rem;
+    }
+
+    .img-layout{
+        display: block;
+    }
+
+   
+}
+
+@media(max-width: 800px) {
+    .head-text{
+        padding: 0 2rem;
+    }
+
+    .section-header{
+        padding: 1rem;
+    }
+
+    .section-content{
+        padding: 1rem;
+    }
+
+    .img-layout{
+        display: block;
+    }
+
+    img{
+        width: 75%;
+    }
+   
 }

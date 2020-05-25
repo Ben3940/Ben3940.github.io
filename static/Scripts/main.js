@@ -16,9 +16,6 @@ new Vue({
 
     data: {
 
-        //Picture of Myself
-        selfImage: "<img src='static/Img/Index_Img/BenYanick.JPG' />",
-
 
 
 
