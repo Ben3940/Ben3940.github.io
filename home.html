@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Yanick</title>
+
+    <!-- Font Awesome Icons included -->
+    <script src="https://kit.fontawesome.com/eb71ca259c.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" rel="stylesheet" href="static/Styles/style.css" defer/>
+</head>
+<body>
+    
+    <div id="app">
+    
+    <nav class="navbar" id="navbar">
+        <a class="navbar-item" href="#home-section">Home</a>
+        <a class="navbar-item" href="#Blender-head-section">Blender</a>
+    </nav>
+
+    <div class="content" id="home-section">
+    <header class="container" id="header">
+        <div class="head-text">
+                <div id="head-text-container">
+                    <h2>Benjamin  Yanick</h2>
+                    <div id="underline"></div>
+                    <p>
+                        Welcome to my personal website!  My name is Benjamin Yanick and I have a passion for self-learning.
+                        This website is a showcase of the projects I have developed over the years.  The website currently presents 3D art work I've made with Blender.  Eventually, projects related to web development, AI, and electronics will be included.
+                    </p>
+                </div>
+        </div>
+        <a id="header-scroll-button" href="#Blender-head-section"><i class="fas fa-arrow-circle-down"></i></a>
+        
+    </header>
+
+
+
+
+
+
+    <!-- BLENDER SECTION -->
+    <!-- BLENDER HEADER -->
+
+    <section class="section-header" id="Blender-head-section">
+        <div>
+            <div>
+                <h1>Blender</h1>
+                <p>
+                    One of the more non-scientific topics of my self-learning adventure, 3D modeling
+                    is more for relaxing than anything else.  Blender is a powerful open-source 3D
+                    modeling software that is a lot more forgiving than painting/drawing similar models.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLENDER SECTION -->
+    <section class="section-content line">
+        
+        <div class="img-layout line">
+            <div>
+                <h3>Rings</h3>
+                <p>
+                    A scene I made towards the beginning of my time with Blender.  I duplicated a ring multiple
+                    times, changing its size and orientation each time. I have the rings wrap around the core and,
+                    a single light shining down on them.
+                </p>
+            </div>
+            <div v-html="rings"></div>
+        </div>
+
+        <div class="img-layout line">
+            <div>
+                <h3>Train</h3>
+                <p>
+                    This train was modeled after a image of a train I saw on google, while practicing with shape
+                    manipulation in Blender.  All of the pieces to this train are made with primitive objects, meaning
+                    that no sculpting or object editing was performed.  This is a crude way to model but suffices as a
+                    starting point into modeling.
+                </p>
+            </div>
+            <div v-html="train"></div>
+        </div>
+
+        <div class="img-layout line">
+            <div>
+                <h3>Boat Under the Moonlight</h3>
+                <p>
+                    This scene does not set out to be over complicated or involve too much.  I
+                    created a simple, low-poly model of a boat and, placed it out on a plane with a reflective
+                    dark-blue material.  The white spheres in the sky emit their own light, which is how they
+                    create reflections on the water.  This image was rendered with Blender's Cycles rendering
+                    engine.
+                </p>
+            </div>
+            <div v-html="boat"></div>
+        </div>
+
+        <div class="img-layout line">
+            
+            <div>
+                <h3>The Docks</h3>
+                <p>
+                    A low-poly docks where the wooden planks have cuts and distortions to their shape slightly to give a more "realistic" look, since very uniformed planks would look off.
+                    This was rendered using the Eevee engine, which is Blender's real time rendering engine.  This means that the image is created in a few seconds because the engine makes a few
+                    "shortcuts" when it comes to rendering reflections, light bounces, etc. .
+                </p>
+            </div>
+            <div v-html="docks"></div>
+        </div>
+
+        <div class="img-layout line">
+            <div>
+                <h3>The Vally</h3>
+                <p>
+                    The start to a future series of low-poly landscapes that I want to create.  These scenes will use rough sculpting of primitive objects to create the land features (i.e. rives, mountains, etc.).
+                    The Eevee rendering engine will be used to help enhance the cartoon-ish look of these landscapes, which is a key part to their character.
+                </p>
+            </div>
+            <div v-html="vally"></div>
+        </div>
+
+        <div class="img-layout line">
+            
+            <div>
+                <h3>Legos</h3>
+                <p>
+                    A recreation of the iconic childhood toys, Legos.  The main focus is on realism with the lighting and texturing of the scene.  This project uses the Cycles rendering engine to
+                    achieve the most realistic lighting options.  I have some future ideas of creating buildings and other sturctures with the basic Lego building blocks seen here.
+                </p>
+            </div>
+            <div v-html="lego"></div>
+        </div>
+
+        
+
+        <div class="img-layout">
+            <div>
+                <h3>Hammer</h3>
+                <p>
+                    The closest I have gotten, so far, to photorealism within Blender.  Ironically, this image was captured using the Eevee engine.  The repeating ring pattern down the texture of the wooden handle
+                    slightly suppresses the realism of the image, I think, since this is too uniform for the real world.  Changing the ring pattern would require dealing with UV unwrapping of the image texture, which
+                    is above my level of experience with Blender at the time of rendering the image.
+                </p>
+            </div>
+            <div v-html="hammer"></div>
+        </div>
+
+        
+    </section>
+    </div>
+    </div>
+
+
+    <!-- CDN link to Vue.js.  NOTE: do not forget to include defer in <script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+
+    <!-- Our JS file where Vue object is defined. NOTE: do not forget to include defer in <script> -->
+    <script src="./static/Scripts/main.js" defer></script>
+
+</body>
+</html>

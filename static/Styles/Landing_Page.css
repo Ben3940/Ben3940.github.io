@@ -1,0 +1,38 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Makes sure conent takes up entire viewport */
+    color: white;
+    background: center no-repeat;
+    background-size: cover;
+}
+
+#time {
+    font-size: 8rem;
+}
+
+h1{
+    margin-bottom: 3rem;
+}
+
+h2{
+    margin-bottom: 0.5rem;
+    opacity:0.6; /* This small opcaity value can change the color of the text (slightly) without actually going in and modifying the text color directly */
+}
+
+/* If the screen is 700px or less, then this media query is active */
+@media(max-width: 700px){
+    #time{
+        font-size: 6rem;
+    }
+}
