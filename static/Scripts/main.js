@@ -32,8 +32,10 @@ new Vue({
         // ***** WEB DEV IMAGES *****
 
         //Landing Page image
-        LandingPage: "<a href='Landing_Page.html'><img src='static/Img/Index_Img/Landing.JPG' /></a>",
+        LandingPage: "<a href='Landing_Page.html'><img src='./static/Img/Landing_Img/Project_Pic.PNG'/></a>",
 
+        // Slide Show animation page
+        Slides: "<a href='Slides.html'><img src='./static/Img/Slides_Img/Project_Pic.PNG'/></a>",
 
 
         // ***** AI IMAGES *****
@@ -69,7 +71,7 @@ new Vue({
 
         lego: "<img src='static/Img/Index_Img/Blender/Lego_Cycles_Bright.png' />",
 
-        vally: "<img src='static/Img/Index_Img/Blender/Vally.png' />",
+        vally: "<img src='static/Img/Index_Img/Blender/Vally.png'/>",
 
         hammer: "<img src='static/Img/Index_Img/Blender/Hammer_Eevee.png' />"
 

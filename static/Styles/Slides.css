@@ -146,6 +146,16 @@ body{
     transition: opacity 0.25s ease-in-out;
 }
 
+#goBack{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 1%;
+    left: 2%;
+    z-index: 1;
+    color: #fff;
+    outline: none;
+}
+
 
 /* For screen sizes smaller than 500px, we want the slide content to rise up from the bottom instead of from the left*/
 @media(max-width: 500px) {

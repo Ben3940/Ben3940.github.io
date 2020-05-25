@@ -30,6 +30,17 @@ h2{
     opacity:0.6; /* This small opcaity value can change the color of the text (slightly) without actually going in and modifying the text color directly */
 }
 
+
+#goBack{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 1%;
+    left: 2%;
+    z-index: 1;
+    color: #fff;
+    outline: none;
+}
+
 /* If the screen is 700px or less, then this media query is active */
 @media(max-width: 700px){
     #time{
