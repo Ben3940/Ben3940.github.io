@@ -44,17 +44,17 @@ function setBackgroundGreet() {
 
     //It is morning
     if (hour < 12) {
-        document.body.style.backgroundImage = "url(Img/Landing_Img/morning.jpg)";
+        document.body.style.backgroundImage = "url(./static/Img/Landing_Img/morning.jpg)";
         greeting.textContent = 'Good Morning';
 
     //It is evening
     } else if (hour < 18) {
-        document.body.style.backgroundImage = "url(Img/Landing_Img/afternoon.jpg)";
+        document.body.style.backgroundImage = "url(./static/Img/Landing_Img/afternoon.jpg)";
         greeting.textContent = 'Good Afternoon';
 
     //It is night
     } else {
-        document.body.style.backgroundImage = "url(Img/Landing_Img/night.jpg)";
+        document.body.style.backgroundImage = "url(./static/Img/Landing_Img/night.jpg)";
         greeting.textContent = 'Good Evening';
 
     }
