@@ -37,6 +37,8 @@ new Vue({
         // Slide Show animation page
         Slides: "<a href='Slides.html'><img src='./static/Img/Slides_Img/Project_Pic.PNG'/></a>",
 
+        Gallery: "<a href='Gallery.html'><img src='./static/Img/Gallery_Img/Project_Pic.PNG'/></a>",
+
 
         // ***** AI IMAGES *****
 
