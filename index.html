@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <!-- Personal Website V3.1 -->
+    <!-- Personal Website V3.2 -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,7 +83,7 @@
             <div v-html="Slides"></div>
         </div>
 
-        <div class="img-layout">
+        <div class="img-layout line">
             <div>
                 <h3>Gallery</h3>
                 <p>
@@ -93,6 +93,20 @@
                 </p>
             </div>
             <div v-html="Gallery"></div>
+        </div>
+        
+        <div class="img-layout">
+            <div>
+                <h3>Ray Casting</h3>
+                <p>
+                    A simple ray casting engine, based on video by Coding Train on YouTube, that emmits rays out in 360 degrees.  This engine has been extended with movement controls (only on Desktop) using <i>WASD</i> and movement speed buttons (both mobile and desktop) for the light source.  Also, user defined boundaries can be placed on screen to effect the rays being casted by the light source. 
+                    <br><br>
+                    Click on the image to see the project in action.
+                    <br><br>
+                    <strong>NOTE:</strong>  For mobile devices, click in two spots on the screen to select a starting and end point for your boundaries.  For desktop, click and drag to place your boundaries.
+                </p>
+            </div>
+            <div v-html="Raycasting"></div>
         </div>
   
     </section>

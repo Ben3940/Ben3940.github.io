@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font Awesome Icons included -->
+    <script
+      src="https://kit.fontawesome.com/eb71ca259c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- p5.js -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+
+    <link href="static/Styles/Raycasting.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a id="goBack" href="index.html#WebDev-head-section"
+      ><i class="fas fa-arrow-circle-left"></i
+    ></a>
+
+    <div class="container">
+      <div id="canvas-area"></div>
+
+      <h2>Movement Speed</h2>
+
+      <div id="movement-speed-options">
+        <button type="button" class="current-speed" id="but_1">1</button>
+        <button type="button" id="but_2">2</button>
+        <button type="button" id="but_3">3</button>
+        <button type="button" id="but_4">4</button>
+        <button type="button" id="but_5">5</button>
+      </div>
+
+      <button type="button" id="reset">Reset</button>
+    </div>
+
+    <script src="static/Scripts/Raycasting/ray.js"></script>
+    <script src="static/Scripts/Raycasting/boundary.js"></script>
+    <script src="static/Scripts/Raycasting/particle.js"></script>
+    <script src="static/Scripts/Raycasting/sketch.js"></script>
+  </body>
+</html>
