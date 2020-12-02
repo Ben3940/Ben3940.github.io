@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Steps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href='./Static/Styles/Steps.css' rel='stylesheet'/>
+</head>
+<body>
+    <a id="goBack" href="index.html#WebDev-head-section"><i class="fas fa-arrow-circle-left"></i></a>
+    <div class="container">
+        <div class="content content-active">
+            <h3 class="content-title">Helium</h3>
+            <span class="subtitle">
+                <p><b>Symbol:</b> He</p> &nbsp;&nbsp;&nbsp;<p><b>Atomic #&nbsp;:</b> 2</p>
+            </span>
+            <p class="content-text">
+                The helium used today is extracted from natural gas as it comes out of the ground.  Helium is present there due to the radioactive decay of uranium and thorium within the Earth's crust.  The name helium comes from the Greek god of the sun, Helios.
+            </p>
+        </div>
+        <div class="content">
+            <h3 class="content-title">Neon</h3>
+            <span class="subtitle">
+                <p><b>Symbol:</b> Ne</p> &nbsp;&nbsp;&nbsp;<p><b>Atomic #&nbsp;:</b> 10</p>
+            </span>
+            <p class="content-text">When it comes to applications of neon, neon lights are the first thing that come to mind.  This is because neon lights are about the only use of neon.  Aside from HeNe lasers which are beginning to dwindle in numbers as cheap laser diodes are becoming more readily available.</p>
+        </div>
+        <div class="content">
+            <h3 class="content-title">Argon</h3>
+            <span class="subtitle">
+                <p><b>Symbol:</b> Ar</p> &nbsp;&nbsp;&nbsp;<p><b>Atomic #&nbsp;:</b> 18</p>
+            </span>
+            <p class="content-text">
+                Argon comes from the Greek for "inactive" and lives up quite well to that name.  It is the cheapest totally inert gas, as it is abundant in our atomosphere and is a by-product in the production of liquid oxygen and nitrogen.
+            </p>
+        </div>
+        <div class="content">
+            <h3 class="content-title">Krypton</h3>
+            <span class="subtitle">
+                <p><b>Symbol:</b> Kr</p> &nbsp;&nbsp;&nbsp;<p><b>Atomic #&nbsp;:</b> 36</p>
+            </span>
+            <p class="content-text">
+                Krypton is used to create higher-efficency incandescent lightbulbs.  This is because the higher molecular weight of krypton (compared to argon and/or nitrogen) lowers the amount of evaporation of the tungsten filament in the bulb.  This in turn, allows the bulb to operate longer and at higher temperatures, where more of the electrical energy is transfered into visible light, rather than heat.
+            </p>
+        </div>
+        <div class="content">
+            <h3 class="content-title">Xenon</h3>
+            <span class="subtitle">
+                <p><b>Symbol:</b> Xe</p> &nbsp;&nbsp;&nbsp;<p><b>Atomic #&nbsp;:</b> 54</p>
+            </span>
+            <p class="content-text">
+                Though xenon is a nobel gas, it is not too hard to bond it with more common compounds.  Many xenon-flourine compounds exist and are commercially available from any vendor.  Xenon also finds a use in arc lighting, a process used by Imax projectors to project their massive images to screen.
+            </p>
+        </div>
+        <div class="content">
+            <h3 class="content-title">Radon</h3>
+            <span class="subtitle">
+                <p><b>Symbol:</b> Rn</p> &nbsp;&nbsp;&nbsp;<p><b>Atomic #&nbsp;:</b> 56</p>
+            </span>
+            <p class="content-text">
+                Radon is the only radioactive nobel gas, with a half-life of 3.2 days.  It is found in the ground and is part of the decay chains of uranium and thorium.  In fact, radon coming up from the ground is a legit concern and has an entire industry based on detecting and midigating radon from homes.
+            </p>
+        </div>
+
+
+        <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="circle active" id='1'>He</div>
+            <div class="circle" id='2'>Ne</div>
+            <div class="circle" id='3'>Ar</div>
+            <div class="circle" id='4'>Kr</div>
+            <div class="circle" id='5'>Xe</div>
+            <div class="circle" id='6'>Rn</div>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn" id="prev" disabled>Prev</button>
+            <button class="btn" id="next">Next</button>
+        </div>
+        
+    </div>
+    <script src='./Static/Scripts/Steps.js'></script>
+</body>
+</html>

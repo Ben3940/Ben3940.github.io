@@ -2,7 +2,6 @@
 let sticky = navbar.offsetTop;
 
 window.onscroll = function () {
-  console.log(navbar.classList);
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
   } else {
@@ -39,6 +38,9 @@ new Vue({
 
     Raycasting:
       "<a href='Raycasting.html'><img src='./static/Img/Raycasting_Img/Project_Pic.PNG'/></a>",
+
+    Inc_Progress:
+      "<a href='Steps.html'><img src='./static/Img/Steps_Img/Project_Pic.PNG'/></a>",
 
     // ***** AI IMAGES *****
 
