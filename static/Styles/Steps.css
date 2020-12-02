@@ -46,8 +46,9 @@ body {
 }
 
 .content{
-    position: fixed;
-    top: 18%;
+    margin-top: 5rem;
+    position: absolute;
+    top: 2%;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
 }
@@ -69,6 +70,7 @@ body {
 }
 
 .progress-container{
+    margin-top: 10rem;
     display: flex;
     justify-content: space-between;
     position: relative;
