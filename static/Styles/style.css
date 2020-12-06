@@ -1,11 +1,21 @@
-﻿/* Gives the smooth scrolling behavior when we click links in our nav-bar*/
+﻿:root{
+    --background-color-main: #2e4356;
+    --background-color-header:  #d1e8e2;
+    --text-color-main: #ffcb9a;
+    --text-color-header:  #2c3531;
+    --border-color-header:  #778899;
+    --icon-color: #fff;
+}
+
+
+/* Gives the smooth scrolling behavior when we click links in our nav-bar*/
 html{
     scroll-behavior: smooth;
 }
 
 body {
-    background: #2e4356;
-    color: #ffcb9a;
+    background: var(--background-color-main);
+    color: var(--text-color-main);
     font-size: 1.4rem;
     margin: 0;
 
@@ -28,7 +38,7 @@ h1 {
 
 /* Used to insert peach-gold line underneath some sections of the web page */
 .line {
-    border-bottom: #ffcb9a 3px solid;
+    border-bottom: var(--text-color-main) 3px solid;
 }
 
 
@@ -60,7 +70,7 @@ h1 {
     outline: none;
 
     /* Since icon is wrapped by <a> we want to change from the default blue/purple to a while color*/
-    color: #fff;
+    color:  var(--icon-color);
 
     /* This with the hover state below will give icon the highlighting effect*/
     opacity: 0.2;
@@ -85,7 +95,7 @@ h1 {
  
  /* Adds the border and animation to give spanning border effect*/
  #underline{
-     border-bottom: solid 3px #ffcb9a;
+     border-bottom: solid 3px var(--text-color-main);
 
 
      margin: 0 auto;
@@ -127,11 +137,11 @@ h1 {
 
 
 .section-header{
-    background: #d1e8e2;
-    color: #2c3531;
+    background: var(--background-color-header);
+    color: var(--text-color-header);
     text-align: center;
     padding: 2rem 30rem 2rem 30rem;
-    border: #778899 7px solid;
+    border: var(--border-color-header) 7px solid;
 }
 
 .section-content{
@@ -144,8 +154,8 @@ h1 {
 
 /* General styling for the navbar as a whole */
 .navbar{
-    border-bottom: #ffcb9a 3px solid;
-    background: #2e4356;
+    border-bottom: var(--text-color-main) 3px solid;
+    background: var(--background-color-main);
     padding: .5rem;
     position: fixed;
     top: 0;
@@ -177,14 +187,14 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
     padding: 0.5rem 2rem 0.5rem 2rem;
 
     text-decoration: none;
-    color: #ffcb9a;
+    color: var(--text-color-main);
     transition: 0.75s;
 }
 
 /* This styling and the transition property in .navbar-item give the highlighting animation when hovering over items within the navbar */
 .navbar-item:hover{
-    background: #778899;
-    color: #2c3531;
+    background: var(--border-color-header);
+    color: var(--text-color-header);
     
 }
 
