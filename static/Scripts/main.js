@@ -33,9 +33,6 @@ new Vue({
     Slides:
       "<a href='Slides.html'><img src='./static/Img/Slides_Img/Project_Pic.PNG'/></a>",
 
-    Gallery:
-      "<a href='Gallery.html'><img src='./static/Img/Gallery_Img/Project_Pic.PNG'/></a>",
-
     Raycasting:
       "<a href='Raycasting.html'><img src='./static/Img/Raycasting_Img/Project_Pic.PNG'/></a>",
 
