@@ -5,6 +5,13 @@
     --text-color-header:#fff;
     --border-color-header:  #f29e4c;
     --icon-color: #f29e4c;
+
+    /* --background-color-main:#fff;
+    --background-color-header:   #f29e4c;
+    --text-color-main: #333;
+    --text-color-header:#fff;
+    --border-color-header:  #2c699a;
+    --icon-color: #2c699a; */
 }
 
 
@@ -233,6 +240,18 @@ but for now this will do */
     margin-right: auto;
 }
 
+.img-layout-blender{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.25rem 0;
+}
+
+.img-layout-blender img{
+    border: 3px var(--border-color-header) solid;
+    border-radius: 10px;
+}
+
 
 
 /* Various media queries to fix padding issues for smaller screens, thus resulting in site text to be akwardly spanning down page */
@@ -290,6 +309,10 @@ but for now this will do */
 
 @media(max-width: 800px) {
 
+    *{
+        text-align: center;
+    }
+
     h1{
         font-size: 2rem;
     }
@@ -303,15 +326,19 @@ but for now this will do */
     }
 
     .head-text{
-        padding: 0 2rem;
+        padding: 0 0.2rem;
     }
 
     .section-header{
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     .section-content{
-        padding: 1rem;
+        padding: 0rem;
+    }
+    
+    .section-content-blender{
+        padding: 0rem;
     }
 
     .img-layout{
@@ -324,6 +351,11 @@ but for now this will do */
 
     img{
         width: 75%;
+    }
+
+    .img-layout-blender{
+        flex-direction: column;
+        padding: 0.25rem 0;
     }
    
 }

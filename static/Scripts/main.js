@@ -77,5 +77,13 @@ new Vue({
     vally: "<img src='static/Img/Index_Img/Blender/Vally.png'/>",
 
     hammer: "<img src='static/Img/Index_Img/Blender/Hammer_Eevee.png' />",
+    
+    marbles: "<img src='static/Img/Index_Img/Blender/Marbles.png' />",
+
+    common_space: "<img src='static/Img/Index_Img/Blender/Common_Space.png' />",
+
+    study_room: "<img src='static/Img/Index_Img/Blender/Study_Room.png' />",
+    
+    kitchen: "<img src='static/Img/Index_Img/Blender/Kitchen.png' />"
   },
 });
