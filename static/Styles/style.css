@@ -1,10 +1,10 @@
 ﻿:root{    
-    --background-color-main:#aaa;
-    --background-color-header:   #2e4356;
-    --text-color-main: #283d3b;
-    --text-color-header:#edddd4;
-    --border-color-header:  #772e25;
-    --icon-color: #333;
+    --background-color-main:#fff;
+    --background-color-header:   #2c699a;
+    --text-color-main: #333;
+    --text-color-header:#fff;
+    --border-color-header:  #f29e4c;
+    --icon-color: #f29e4c;
 }
 
 
@@ -95,7 +95,7 @@ h1 {
  
  /* Adds the border and animation to give spanning border effect*/
  #underline{
-     border-bottom: solid 3px var(--text-color-main);
+     border-bottom: solid 3px var(--border-color-header);
 
 
      margin: 0 auto;
@@ -154,7 +154,7 @@ h1 {
 
 /* General styling for the navbar as a whole */
 .navbar{
-    border-bottom: var(--text-color-main) 3px solid;
+    border-bottom: var(--border-color-header) 3px solid;
     background: var(--background-color-main);
     padding: .5rem;
     position: fixed;
