@@ -39,6 +39,7 @@ body {
 
 .container{
     text-align: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,6 +52,7 @@ body {
     top: 0%;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
+    width: 50%;
 }
 
 .content-title{
@@ -67,6 +69,7 @@ body {
 
 .content-active{
     opacity: 1;
+    
 }
 
 .progress-container{
@@ -77,6 +80,7 @@ body {
     margin-bottom: 30px;
     max-width: 100%;
     width: 350px;
+    
 }
 
 .progress-container::before{
@@ -88,6 +92,7 @@ body {
     transform: translateY(-50%);
     height: 4px;
     width: 100%;
+    
 }
 
 .progress{
@@ -99,6 +104,7 @@ body {
     height: 4px;
     width: 0%;
     transition: 0.4s ease;
+    
 }
 
 .circle{
