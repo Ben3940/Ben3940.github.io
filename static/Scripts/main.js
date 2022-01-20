@@ -39,6 +39,9 @@ new Vue({
     Inc_Progress:
       "<a href='Steps.html'><img src='./static/Img/Steps_Img/Project_Pic.PNG'/></a>",
 
+    Dining_Menu_React:
+      "<a href='Dining_Menu_React.html'><img src='./static/Img/Dining_Menu_React_Img/Project_Pic.PNG'/></a>",
+
     // ***** AI IMAGES *****
 
     //Python semantic AI for park reviews image
