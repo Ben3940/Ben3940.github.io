@@ -1,4 +1,4 @@
-import App from 'static/Scripts/Dining_Menu_React/App.js';
+import App from '/static/Scripts/Dining_Menu_React/App.js';
 
 ReactDOM.render(React.createElement(React.StrictMode, 
                 null, 

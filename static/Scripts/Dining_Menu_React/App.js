@@ -1,8 +1,8 @@
-import Menu from 'static/Scripts/Dining_Menu_React/components/Menu.js';
-import Categories from 'static/Scripts/Dining_Menu_React/components/Categories.js';
-import Order from 'static/Scripts/Dining_Menu_React/components/Order.js';
-import Modal from 'static/Scripts/Dining_Menu_React/components/Modal.js';
-import items from 'static/Scripts/Dining_Menu_React/data.js';
+import Menu from '/static/Scripts/Dining_Menu_React/components/Menu.js';
+import Categories from '/static/Scripts/Dining_Menu_React/components/Categories.js';
+import Order from '/static/Scripts/Dining_Menu_React/components/Order.js';
+import Modal from '/static/Scripts/Dining_Menu_React/components/Modal.js';
+import items from '/static/Scripts/Dining_Menu_React/data.js';
 
 const { useState, useEffect } = window.React;
 
