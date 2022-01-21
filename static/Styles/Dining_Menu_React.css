@@ -19,6 +19,16 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  #goBack{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 1%;
+    left: 2%;
+    z-index: 1;
+    color: #fff;
+    outline: none;
+}
   
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
