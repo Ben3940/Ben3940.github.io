@@ -36,10 +36,10 @@ new Vue({
     Raycasting:
       "<a href='Raycasting.html'><img src='./static/Img/Raycasting_Img/Project_Pic.PNG'/></a>",
 
-    Inc_Progress:
+    IncProgress:
       "<a href='Steps.html'><img src='./static/Img/Steps_Img/Project_Pic.PNG'/></a>",
 
-    Dining_Menu_React:
+    DiningMenuReact:
       "<a href='Dining_Menu_React.html'><img src='./static/Img/Dining_Menu_React_Img/Project_Pic.PNG'/></a>",
 
     // ***** AI IMAGES *****
