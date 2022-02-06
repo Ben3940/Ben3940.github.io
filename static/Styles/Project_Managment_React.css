@@ -1,0 +1,433 @@
+:root {
+    --primary-color: #E3A1AA;
+    --secondary-color: #252535;
+    --white-color: #EEE5E9;
+    --grey-color: #333;
+    --blue-color: #5CACFB;
+    --midnight-blue-color: #446482;
+  }
+  
+  *, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  #goBack{
+    /* position: absolute;
+    top: 1%;
+    left: 20%; */
+    font-size: 1.2rem;
+    z-index: 3;
+    color: #333;
+    outline: none;
+}
+  
+  body{
+    background-color: var(--secondary-color);
+  }
+  
+  .underline {
+    width: 50%;
+    border-bottom: var(--white-color) 2px solid;
+    margin: 0.5rem;
+  }
+  .underline-secondary {
+    width: 50%;
+    border-bottom: var(--secondary-color) 4px solid;
+    margin: 0 auto 1rem auto;
+  }
+  
+  .main-container{
+    background-color: var(--white-color);
+    margin: 1.4rem 4rem 1.4rem 4rem;
+    padding: 1rem;
+    height: 92vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);/* repeat(20, 1fr); */
+    position: relative;
+  }
+  
+  
+  
+  /*! HEADER COMPONENT */
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    color: var(--grey-color);
+    grid-column: 1 / 7;
+    grid-row: 1;
+  }
+  
+  .header-float-left {
+    margin-left: auto;
+  }
+  
+  .header-float-left button {
+    margin: 0 0.4rem 0 0.4rem;
+  }
+  
+  .header-upgrade-btn {
+    border: var(--primary-color) 1px solid;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    padding: 0.4rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header-upgrade-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+  }
+  
+  .header-user-btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 0.4rem;
+    border-radius: 15px;
+    border-color: transparent;
+  }
+  
+  
+  
+  /*! NAVBAR COMPONENT */
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: var(--grey-color);
+    padding: 3px;
+    transition: all 1s ease-in-out;
+  }
+  
+  
+  
+  /*! SIDEBAR COMPONENT */
+  .sidebar-container {
+    color: var(--white-color);
+    padding: 1rem;
+    grid-column: 1 / 3;
+    background-color: var(--secondary-color);
+    border: var(--secondary-color) 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    top: 7%;
+    height: 90%;
+    position: absolute;
+  }
+  
+  .sidebar-container h3 {
+    margin: 0.4rem;
+  }
+  
+  .sidebar-projects,
+  .sidebar-teams,
+  .sidebar-project-btn,
+  .sidebar-team-btn {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--white-color);
+    text-align: start;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .sidebar-project-btn,
+  .sidebar-team-btn {
+    margin: 0.2rem 0.4rem 0.2rem 2rem;
+  }
+  
+  .sidebar-projects:hover,
+  .sidebar-teams:hover,
+  .sidebar-project-btn:hover,
+  .sidebar-team-btn:hover {
+    color: var(--primary-color);
+  }
+  
+  .sidebar-float-bottom {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--midnight-blue-color);
+    border-radius: 15px;
+    margin: 0.25rem;
+  }
+  
+  .sidebar-new-project-icon{
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #252535 3px dashed;
+    border-radius: 7px;
+    color: #252535;
+    font-size: 50px;
+    margin: 0.5rem auto;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .sidebar-new-project-icon:hover {
+    border: var(--primary-color) 3px solid;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+  }
+  
+  
+  
+  /*! CONTENT COMPONENT */
+  .content-container {
+    grid-column: 3 / 5;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 0.5rem;
+    flex-wrap: wrap;
+    margin: 0;
+    
+  }
+  
+  .content-header {
+    grid-column: 3 / 5;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--secondary-color);
+  }
+  
+  
+  .card-container-project,
+  .card-container-team { 
+    height: 9rem;
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 25%;
+    padding: 3rem;
+    margin: 2rem 00.25rem;
+    flex-basis: 25%;
+    font-size: 2.5rem;
+    color: var(--white-color);
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .primary-bgrd {
+    background-color: var(--primary-color);
+    box-shadow: 0px 5px 7px 0px var(--primary-color);
+  }
+  .secondary-bgrd {
+    background-color: var(--blue-color);
+    box-shadow: 0px 5px 7px 0px var(--blue-color);
+  }
+  
+  
+  
+  /*! FOCUSED CONTENT COMPONENT */
+  .focusedContent-container {
+    grid-column: 3 / 5;
+    background-color: transparent;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .focusedContent-memberlist {
+    margin-top: 2rem;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .focusedContent-members {
+    list-style-type: none;
+  }
+  
+  .focusedContent-container button{
+    width: 50%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 16px;
+    border-radius: 15px;
+    border: var(--primary-color) 2px solid;
+    color: var(--primary-color);
+    background-color: transparent;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .focusedContent-container button:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  
+  .focusedContent-container h2 {
+    margin: 0.25rem;
+  }
+  
+  .focusedContent-container button {
+    position: absolute;
+    bottom: 3%;
+    width: 10rem;
+  }
+  
+  
+  
+  /*! STATS COMPONENT */
+  .stats-container {
+    grid-column: 4;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background-color: var(--midnight-blue-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    /* height: 8rem; */
+    width: 20rem;
+    padding: 1rem;
+  }
+  
+  .stats-inner-container {
+    background-color: var(--blue-color);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .stats-bargraph {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stats-initialized-projects-bar {
+    width: 100%;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .stats-completed-projects-bar {
+    width: 88%;
+    background-color: green;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .stats-active-projects-bar {
+    width: 12%;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  
+  
+  
+  
+  
+  @media (max-width: 1300px) {
+  
+    .main-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .content-container {
+      grid-column: 2;
+      
+      padding: 1rem;
+    }
+    .content-header {
+      grid-column: 2;
+    }
+  
+    .card-container-project,
+    .card-container-team {
+      height: 4.5rem;
+      font-size: 1.25rem;
+      margin: 0.5rem;
+      
+    }
+  
+    .sidebar-container {
+      font-size: 14px;
+    }
+    .sidebar-new-project-icon {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  
+    .focusedContent-container {
+      grid-column: 2 / 4;
+    }
+  
+  
+  }
+  
+  @media (max-width: 900px) {
+    .main-container {
+      height: 95vh;
+    }
+  
+    .content-container,
+    .content-header {
+      grid-column:  2 / 4;
+    }
+  
+    .stats-container {
+      display: none;
+    }
+  
+    .sidebar-container {
+      width: 50%;
+    }
+  
+    .sidebar-float-bottom {
+      display: none;
+    }
+  
+    .underline-secondary {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .sidebar-container {
+      display: none;
+    }
+  
+    .content-container,
+    .content-header {
+      grid-column: 2;
+      padding: 0.1rem;
+    }
+  
+    .focusedContent-container {
+      grid-column: 1 / 4;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .main-container {
+      padding: 0.1rem;
+      margin: 0.2rem;
+      height: 105vh;
+    }
+  
+    .header-container {
+      padding: 1rem 0.5rem 0rem 0.5rem;
+    }
+  }
