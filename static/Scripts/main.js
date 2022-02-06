@@ -41,6 +41,9 @@ new Vue({
 
     DiningMenuReact:
       "<a href='Dining_Menu_React.html'><img src='./static/Img/Dining_Menu_React_Img/Project_Pic.PNG'/></a>",
+    
+    ProjectManagmentReact:
+    "<a href='Project_Managment_React.html'><img src='./static/Img/Project_Managment_React_Img/Project_Pic.PNG'/></a>",
 
     // ***** AI IMAGES *****
 
