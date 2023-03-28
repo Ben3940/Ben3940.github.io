@@ -261,6 +261,7 @@ but for now this will do */
 
   p {
     font-size: 2rem;
+    padding: 0.75rem;
   }
 
   .head-text {
