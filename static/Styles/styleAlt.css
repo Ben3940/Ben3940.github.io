@@ -242,19 +242,39 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
   padding-bottom: 0.75rem;
 }
 
-.img-layout-blender {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0.25rem 0;
+.section-content-blender {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  padding: 1rem 0rem;
 }
 
-.img-layout-blender img {
-  border: 3px var(--border-color-header) solid;
-  border-radius: 10px;
+.section-content-blender img {
+  margin: 0.5rem auto;
+  box-shadow: #555 0px 4px 4px 7px;
+  max-height: 90%;
+  max-width: 90%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+
+  .section-content-blender {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-content-blender img {
+    max-height: 95%;
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-content-blender {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Various media queries to fix padding issues for smaller screens, thus resulting in site text to be akwardly spanning down page
