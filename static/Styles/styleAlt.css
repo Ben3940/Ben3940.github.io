@@ -31,9 +31,7 @@ body {
   background: var(--background-color-main);
   color: var(--text-color-main);
   font-size: 16px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: min-content;
+  width: 100%;
 }
 
 h1 {
@@ -50,6 +48,8 @@ h1 {
   grid-column: 2 / 12;
   display: flex;
   flex-direction: column;
+  grid-row-start: 1;
+  margin-top: 4rem;
 }
 
 .head-text {
@@ -59,6 +59,12 @@ h1 {
   padding: 2rem;
   background-color: var(--background-color-header);
   border-radius: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: min-content;
 }
 
 main {
@@ -89,6 +95,10 @@ main {
   opacity: 1;
 }
 
+#head-text-container {
+  color: var(--text-color-header);
+}
+
 /* Adds a small margin to make <h2> text appear to float up from underline*/
 #head-text-container > h2 {
   margin-bottom: 0.1rem;
@@ -98,6 +108,7 @@ main {
 /* Adds animation to make text fade in */
 #head-text-container > p {
   animation: 1.7s ease-in 0s 1 textAppears forwards;
+  padding-top: 1rem;
 }
 
 /* Adds the border and animation to give spanning border effect*/
@@ -155,7 +166,6 @@ main {
   padding: 0rem 0.2rem 0rem 0.2rem;
   width: 75%;
   margin: auto;
-  border: 1px solid red;
 }
 
 /* General styling for the navbar as a whole */
@@ -164,19 +174,18 @@ main {
   background: var(--background-color-main);
   padding: 0.5rem;
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   /* This ensures that the navbar will always be on top.  There was a bug with font-awesome icon that allowed icons to sit on top of the navbar.*/
   z-index: 100;
 
   /* Changing the animation length or the translateY() value will modify the length of the animation */
   animation: 0.9s ease-in 0s 1 navbarSlideDown forwards;
 }
-
 /* Gives animation of navbar dropping down from top.
 NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I still get the results I want with the animation.  At this point, the animation works and thats good enough for me*/
 @keyframes navbarSlideDown {
@@ -212,6 +221,8 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.2rem 0rem;
+  text-align: center;
 }
 
 .img-layout a {
@@ -223,6 +234,12 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
 .img-layout a > img {
   max-height: 200px;
   max-width: 200px;
+  padding-top: 0.75rem;
+  box-shadow: #555 0px 4px 4px 7px;
+}
+
+.img-layout-content-text {
+  padding-bottom: 0.75rem;
 }
 
 .img-layout-blender {
