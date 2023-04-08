@@ -7,12 +7,19 @@
 }
 
 :root {
-  --background-color-main: #fff;
+  --background-color-main: #afded6;
+  --background-color-header: #156356;
+  --text-color-main: #4b5e5b;
+  --text-color-header: #afded6;
+  --border-color-header: #4b5e5b;
+  --icon-color: #4b5e5b;
+
+  /* --background-color-main: #fff;
   --background-color-header: #2c699a;
   --text-color-main: #333;
   --text-color-header: #fff;
   --border-color-header: #f29e4c;
-  --icon-color: #f29e4c;
+  --icon-color: #f29e4c; */
 
   /* --background-color-main:#fff;
     --background-color-header:   #f29e4c;
@@ -113,7 +120,7 @@ main {
 
 /* Adds the border and animation to give spanning border effect*/
 #underline {
-  border-bottom: solid 3px var(--border-color-header);
+  border-bottom: solid 3px var(--text-color-header);
 
   margin: 0 auto;
   animation: 1.2s ease-in-out 0s 1 underlineSlideIn forwards;
@@ -226,7 +233,6 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
 }
 
 .img-layout a {
-  padding: 0.2;
   display: flex;
   justify-content: center;
 }
@@ -234,7 +240,6 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
 .img-layout a > img {
   max-height: 200px;
   max-width: 200px;
-  padding-top: 0.75rem;
   box-shadow: #555 0px 4px 4px 7px;
 }
 
