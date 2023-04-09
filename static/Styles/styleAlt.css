@@ -7,13 +7,15 @@
 }
 
 :root {
-  --background-color-main: #afded6;
+  /* Monochromatic: mint green */
+  --background-color-main: hsl(170, 25%, 78%);
   --background-color-header: #156356;
   --text-color-main: #4b5e5b;
   --text-color-header: #afded6;
   --border-color-header: #4b5e5b;
   --icon-color: #4b5e5b;
 
+  /* Complementary : blue, orange */
   /* --background-color-main: #fff;
   --background-color-header: #2c699a;
   --text-color-main: #333;
@@ -21,12 +23,12 @@
   --border-color-header: #f29e4c;
   --icon-color: #f29e4c; */
 
-  /* --background-color-main:#fff;
-    --background-color-header:   #f29e4c;
-    --text-color-main: #333;
-    --text-color-header:#fff;
-    --border-color-header:  #2c699a;
-    --icon-color: #2c699a; */
+  /* --background-color-main: #c8c9de;
+  --background-color-header: #f2d3ea;
+  --text-color-main: #838491;
+  --text-color-header: #838491;
+  --border-color-header: #916686;
+  --icon-color: #916686; */
 }
 
 /* Gives the smooth scrolling behavior when we click links in our nav-bar*/
@@ -37,7 +39,7 @@ html {
 body {
   background: var(--background-color-main);
   color: var(--text-color-main);
-  font-size: 16px;
+  font-size: 18px;
   width: 100%;
 }
 
@@ -205,7 +207,7 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
 
 /* Styling for the individual links within the navbar */
 .navbar-item {
-  padding: 0.5rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 
   text-decoration: none;
   color: var(--text-color-main);
@@ -215,7 +217,7 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
 /* This styling and the transition property in .navbar-item give the highlighting animation when hovering over items within the navbar */
 .navbar-item:hover {
   background: var(--border-color-header);
-  color: var(--text-color-header);
+  color: var(--background-color-main);
 }
 
 #navbar {
