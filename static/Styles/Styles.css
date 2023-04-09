@@ -2,22 +2,33 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-  --background-color-main: #fff;
+  /* Monochromatic: mint green */
+  --background-color-main: hsl(170, 25%, 78%);
+  --background-color-header: #156356;
+  --text-color-main: #4b5e5b;
+  --text-color-header: #afded6;
+  --border-color-header: #4b5e5b;
+  --icon-color: #4b5e5b;
+
+  /* Complementary : blue, orange */
+  /* --background-color-main: #fff;
   --background-color-header: #2c699a;
   --text-color-main: #333;
   --text-color-header: #fff;
   --border-color-header: #f29e4c;
-  --icon-color: #f29e4c;
+  --icon-color: #f29e4c; */
 
-  /* --background-color-main:#fff;
-    --background-color-header:   #f29e4c;
-    --text-color-main: #333;
-    --text-color-header:#fff;
-    --border-color-header:  #2c699a;
-    --icon-color: #2c699a; */
+  /* --background-color-main: #c8c9de;
+  --background-color-header: #f2d3ea;
+  --text-color-main: #838491;
+  --text-color-header: #838491;
+  --border-color-header: #916686;
+  --icon-color: #916686; */
 }
 
 /* Gives the smooth scrolling behavior when we click links in our nav-bar*/
@@ -28,21 +39,15 @@ html {
 body {
   background: var(--background-color-main);
   color: var(--text-color-main);
-  font-size: 1.4rem;
-  margin: 0;
+  font-size: 18px;
+  width: 100%;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 2.2rem;
+  font-style: bold;
 }
 
-/* This is only assigned to the header of the website currently, just some basic layout */
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-/* Used to insert peach-gold line underneath some sections of the web page */
 .line {
   border-bottom: var(--border-color-header) 3px solid;
 }
@@ -50,15 +55,30 @@ h1 {
 /* The entire header will span the full length of the screen when the user enters the website */
 #header {
   height: 100vh;
+  grid-column: 2 / 12;
   display: flex;
   flex-direction: column;
+  grid-row-start: 1;
+  margin-top: 4rem;
 }
 
 .head-text {
-  padding: 0 25rem;
   justify-content: center;
   text-align: center;
   margin: auto;
+  padding: 2rem;
+  background-color: var(--background-color-header);
+  border-radius: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: min-content;
+}
+
+main {
+  grid-column: 1 / 13;
 }
 
 /* Styling for scroll button at bottom of header (font-awesome icon arrow)*/
@@ -85,6 +105,10 @@ h1 {
   opacity: 1;
 }
 
+#head-text-container {
+  color: var(--text-color-header);
+}
+
 /* Adds a small margin to make <h2> text appear to float up from underline*/
 #head-text-container > h2 {
   margin-bottom: 0.1rem;
@@ -94,11 +118,12 @@ h1 {
 /* Adds animation to make text fade in */
 #head-text-container > p {
   animation: 1.7s ease-in 0s 1 textAppears forwards;
+  padding-top: 1rem;
 }
 
 /* Adds the border and animation to give spanning border effect*/
 #underline {
-  border-bottom: solid 3px var(--border-color-header);
+  border-bottom: solid 3px var(--text-color-header);
 
   margin: 0 auto;
   animation: 1.2s ease-in-out 0s 1 underlineSlideIn forwards;
@@ -139,13 +164,18 @@ h1 {
 .section-header {
   background: var(--background-color-header);
   color: var(--text-color-header);
+  width: 100%;
   text-align: center;
-  padding: 2rem 30rem 2rem 30rem;
+  /* padding: 2rem 30rem 2rem 30rem; */
+  padding: 0.2rem 0.3rem;
   border: var(--border-color-header) 7px solid;
 }
 
 .section-content {
-  padding: 0rem 25rem 2rem 25rem;
+  /* padding: 0rem 25rem 2rem 25rem; */
+  padding: 0rem 0.2rem 0rem 0.2rem;
+  width: 75%;
+  margin: auto;
 }
 
 /* General styling for the navbar as a whole */
@@ -154,19 +184,17 @@ h1 {
   background: var(--background-color-main);
   padding: 0.5rem;
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  /* This ensures that the navbar will always be on top.  There was a bug with font-awesome icon that allowed icons to sit on top of the navbar.*/
   z-index: 100;
 
   /* Changing the animation length or the translateY() value will modify the length of the animation */
   animation: 0.9s ease-in 0s 1 navbarSlideDown forwards;
 }
-
 /* Gives animation of navbar dropping down from top.
 NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I still get the results I want with the animation.  At this point, the animation works and thats good enough for me*/
 @keyframes navbarSlideDown {
@@ -179,7 +207,7 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
 
 /* Styling for the individual links within the navbar */
 .navbar-item {
-  padding: 0.5rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 
   text-decoration: none;
   color: var(--text-color-main);
@@ -189,53 +217,92 @@ NOTE: I am unsure why nothing is needed in 100% section of this keyframe yet I s
 /* This styling and the transition property in .navbar-item give the highlighting animation when hovering over items within the navbar */
 .navbar-item:hover {
   background: var(--border-color-header);
-  color: var(--text-color-header);
+  color: var(--background-color-main);
 }
 
 #navbar {
   overflow: hidden;
 }
 
-.sticky {
-}
-
-/* Padding to off set the content of the webpage so the navbar doesn't overlap the image of myself at the top.  I'm sure there's a better way to do this
-but for now this will do */
-.content {
-  padding-top: 3rem;
-}
-
 /* Styling for positioning images across the site properly for each section */
 .img-layout {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0rem;
+  text-align: center;
 }
 
-/* Each block of text and each image for a project will take up 50% of the project space on site*/
-.img-layout div {
-  flex-basis: 50%;
+.img-layout h2 {
+  font-style: bold;
+  color: var(--background-color-header);
 }
 
-.img-layout img {
-  padding: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.img-layout-blender {
+.img-layout a {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0.25rem 0;
+  justify-content: center;
 }
 
-.img-layout-blender img {
-  border: 3px var(--border-color-header) solid;
-  border-radius: 10px;
+.img-layout a > img {
+  max-height: 200px;
+  max-width: 200px;
+  box-shadow: #555 0px 4px 4px 7px;
 }
 
-/* Various media queries to fix padding issues for smaller screens, thus resulting in site text to be akwardly spanning down page */
+.img-layout-content-text {
+  padding-bottom: 0.75rem;
+}
+
+.section-content-blender {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  padding: 1rem 0rem;
+}
+
+.section-content-blender img {
+  margin: 0.5rem auto;
+  box-shadow: #555 0px 4px 4px 7px;
+  max-height: 90%;
+  max-width: 90%;
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+
+  .img-layout a > img {
+    max-height: 400px;
+    max-width: 400px;
+  }
+
+  .section-content-blender {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-content-blender img {
+    max-height: 95%;
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-layout {
+    flex-direction: row;
+  }
+
+  .img-layout a > img {
+    margin-left: 1.5rem;
+  }
+
+  .section-content-blender {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Various media queries to fix padding issues for smaller screens, thus resulting in site text to be akwardly spanning down page
 @media (max-width: 1800px) {
   .head-text {
     padding: 0 10rem;
@@ -334,4 +401,4 @@ but for now this will do */
     flex-direction: column;
     padding: 0.25rem 0;
   }
-}
+} */
