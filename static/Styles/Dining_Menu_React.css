@@ -145,9 +145,9 @@ p {
 .order-container {
   z-index: 1;
   position: fixed;
-  top: 0;
+  top: 4%;
   left: 0;
-  width: 13rem;
+  width: 13.5rem;
   border: 3px solid var(--clr-primary);
   display: flex;
   flex-direction: column;
