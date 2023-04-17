@@ -41,7 +41,7 @@ body {
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
-  transform: rotateZ(-20deg);
+  transform: rotateZ(-75deg);
 }
 
 @keyframes rotate {
@@ -105,10 +105,4 @@ body {
 .CG::after {
   background-color: var(--CG-secondary-amino-acid-color);
   box-shadow: 0 0 12px var(--CG-secondary-amino-acid-color);
-}
-
-@media (max-width: 600px) {
-  #strand {
-    transform: rotateZ(-75deg);
-  }
 }
