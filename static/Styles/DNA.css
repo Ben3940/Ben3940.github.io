@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --background-color: hsl(200, 30%, 17%);
+  --bond-color: hsl(60, 29%, 80%);
+  --AT-primary-ammino-acid-color: hsl(150, 100%, 55%);
+  --AT-secondary-ammino-acid-color: hsl(170, 100%, 50%);
+  --CG-primary-ammino-acid-color: hsl(225, 100%, 55%);
+  --CG-secondary-ammino-acid-color: hsl(235, 70%, 50%);
+}
+
+body {
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 10px;
+}
+
+#goBack {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1.2rem;
+  padding-left: 5px;
+  z-index: 1;
+  color: #fff;
+  outline: none;
+}
+
+#strand {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: rotateZ(-20deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+/* bond */
+.dna {
+  position: relative;
+  width: 1px;
+  height: 100px;
+  border: 1px solid var(--bond-color);
+  box-shadow: 0 0 15px var(--bond-color);
+  background: transparent;
+  margin: 0px 10px;
+  animation: rotate 3s linear infinite;
+}
+
+/* top ammino acid */
+.dna::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* bottom ammino acid */
+.dna::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.AT::before {
+  background-color: var(--AT-primary-ammino-acid-color);
+  box-shadow: 0 0 15px var(--AT-primary-ammino-acid-color);
+}
+
+.AT::after {
+  background-color: var(--AT-secondary-ammino-acid-color);
+  box-shadow: 0 0 12px var(--AT-secondary-ammino-acid-color);
+}
+
+.CG::before {
+  background-color: var(--CG-primary-ammino-acid-color);
+  box-shadow: 0 0 15px var(--CG-primary-ammino-acid-color);
+}
+
+.CG::after {
+  background-color: var(--CG-secondary-ammino-acid-color);
+  box-shadow: 0 0 12px var(--CG-secondary-ammino-acid-color);
+}
+
+@media (max-width: 400px) {
+  #strand {
+    transform: rotateZ(-75deg);
+  }
+}
