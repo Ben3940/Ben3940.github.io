@@ -107,7 +107,7 @@ body {
   box-shadow: 0 0 12px var(--CG-secondary-amino-acid-color);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #strand {
     transform: rotateZ(-75deg);
   }
