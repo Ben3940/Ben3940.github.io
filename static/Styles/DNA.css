@@ -8,10 +8,10 @@
 :root {
   --background-color: hsl(200, 30%, 17%);
   --bond-color: hsl(60, 29%, 80%);
-  --AT-primary-ammino-acid-color: hsl(150, 100%, 55%);
-  --AT-secondary-ammino-acid-color: hsl(170, 100%, 50%);
-  --CG-primary-ammino-acid-color: hsl(225, 100%, 55%);
-  --CG-secondary-ammino-acid-color: hsl(235, 70%, 50%);
+  --AT-primary-amino-acid-color: hsl(150, 100%, 55%);
+  --AT-secondary-amino-acid-color: hsl(170, 100%, 50%);
+  --CG-primary-amino-acid-color: hsl(225, 100%, 55%);
+  --CG-secondary-amino-acid-color: hsl(235, 70%, 50%);
 }
 
 body {
@@ -65,7 +65,7 @@ body {
   animation: rotate 3s linear infinite;
 }
 
-/* top ammino acid */
+/* top amino acid */
 .dna::before {
   content: "";
   position: absolute;
@@ -76,7 +76,7 @@ body {
   border-radius: 50%;
 }
 
-/* bottom ammino acid */
+/* bottom amino acid */
 .dna::after {
   content: "";
   position: absolute;
@@ -88,23 +88,23 @@ body {
 }
 
 .AT::before {
-  background-color: var(--AT-primary-ammino-acid-color);
-  box-shadow: 0 0 15px var(--AT-primary-ammino-acid-color);
+  background-color: var(--AT-primary-amino-acid-color);
+  box-shadow: 0 0 15px var(--AT-primary-amino-acid-color);
 }
 
 .AT::after {
-  background-color: var(--AT-secondary-ammino-acid-color);
-  box-shadow: 0 0 12px var(--AT-secondary-ammino-acid-color);
+  background-color: var(--AT-secondary-amino-acid-color);
+  box-shadow: 0 0 12px var(--AT-secondary-amino-acid-color);
 }
 
 .CG::before {
-  background-color: var(--CG-primary-ammino-acid-color);
-  box-shadow: 0 0 15px var(--CG-primary-ammino-acid-color);
+  background-color: var(--CG-primary-amino-acid-color);
+  box-shadow: 0 0 15px var(--CG-primary-amino-acid-color);
 }
 
 .CG::after {
-  background-color: var(--CG-secondary-ammino-acid-color);
-  box-shadow: 0 0 12px var(--CG-secondary-ammino-acid-color);
+  background-color: var(--CG-secondary-amino-acid-color);
+  box-shadow: 0 0 12px var(--CG-secondary-amino-acid-color);
 }
 
 @media (max-width: 400px) {
